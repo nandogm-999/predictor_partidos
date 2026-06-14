@@ -1,4 +1,4 @@
-#  Predictor del Mundial 2026 - ML
+#  Predictor de partidos de selecciones de fútbol masculino - ML
 
 Este es un proyecto personal de Machine Learning desarrollado en Python para predecir partidos de fútbol de selecciones. Utiliza datos históricos de selecciones, rendimiento reciente y modelos basados en árboles de decisión para simular el torneo completo bajo su nuevo formato de 48 equipos.
 
