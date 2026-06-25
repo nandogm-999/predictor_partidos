@@ -31,6 +31,7 @@ if __name__ == "__main__":
         max_depth=3,
         min_samples_leaf=70,
         random_state=45,
+        class_weight='balanced'
     )
     model.fit(X_train_final, y_train_final)
 
