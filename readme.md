@@ -23,3 +23,8 @@ Este es un proyecto personal de Machine Learning desarrollado en Python para pre
 
 ---
 
+## Datos
+El dataset completo no está incluido en este repositorio debido a su tamaño. Para obtenerlo:
+1. Descarga el archivo desde [https://drive.google.com/file/d/1VZzPtMxREr1ZAmnTouREOjDx6tK5yQX7/view?usp=sharing].
+2. Guárdalo en la carpeta `/data/` como `processed_data_last_3.csv`.
+
