@@ -3,9 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
-from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc, accuracy_score
+from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc, accuracy_score, log_loss
 from sklearn.preprocessing import label_binarize
-from sklearn.utils.class_weight import compute_sample_weight
 
 DATA_PATH = "data/processed_data_last_3.csv"
 FEATURES = [
@@ -54,7 +53,9 @@ def main():
 
     # Metricas globales y detalladas en consola
     acc = accuracy_score(y_test, y_pred)
+    loss = log_loss(y_test, y_score)
     print("Model Performance Metrics (Test Set: 2024-01-01 to 2026-06-01):")
+    print(f"Log Loss: {loss:.4f}")
     print(f"Accuracy: {acc:.2%}\n")
     print(classification_report(y_test, y_pred))
 
@@ -112,7 +113,7 @@ def main():
     plt.ylim([0.0, 1.05])
     plt.xlabel("False Positive Rate (FPR)")
     plt.ylabel("True Positive Rate (TPR)")
-    plt.title("Multiclass ROC Curves (One-vs-Rest)")
+    plt.title("Multiclass ROC Curves")
     plt.legend(loc="lower right")
     plt.grid(alpha=0.3)
     plt.tight_layout()
