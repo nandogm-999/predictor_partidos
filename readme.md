@@ -40,7 +40,7 @@ El modelo actual ha sido evaluado con un conjunto de datos de prueba desde enero
 ├── data/                   # Datasets
 ├── plots/                  # Gráficos de evaluación (Matriz de confusión, Curvas ROC)
 ├── notebooks/              #algunas pruebas y gráficas del dataset final                      
-├── data_prep.py            # Limpieza y generación de predictores
+├── preprocess.py            # Limpieza y generación de predictores
 ├── train.py                # Entrenamiento del modelo
 ├── model_GB.joblib         # Modelo final serializado y listo para producción
 ├── requirements.txt        # Dependencias del proyecto
